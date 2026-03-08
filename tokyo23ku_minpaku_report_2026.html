@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>東京都23区 住宅宿泊事業・旅館業 条例動向レポート（2026年3月）</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: #222;
+      background: #f0f2f5;
+    }
+    .page {
+      max-width: 1000px;
+      margin: 36px auto;
+      background: #fff;
+      padding: 56px 68px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.10);
+    }
+    h1 { font-size: 19px; font-weight: 700; color: #1a3a6e; border-bottom: 3px solid #1a5fa8; padding-bottom: 12px; margin-bottom: 6px; }
+    .meta { font-size: 12px; color: #666; margin-bottom: 28px; }
+    h2 { font-size: 14px; font-weight: 700; background: #1a3a6e; color: #fff; padding: 8px 14px; margin: 36px 0 14px; border-radius: 4px; }
+    h3 { font-size: 13.5px; font-weight: 700; color: #1a3a6e; border-left: 4px solid #1a5fa8; padding-left: 10px; margin: 22px 0 8px; }
+    p { margin-bottom: 9px; }
+
+    .summary-box { background: #eef4fb; border: 1px solid #b0ceee; border-radius: 6px; padding: 16px 22px; margin-bottom: 24px; }
+    .summary-box ul { padding-left: 18px; }
+    .summary-box li { margin-bottom: 5px; }
+
+    /* Badges */
+    .badge { display: inline-block; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 12px; margin-right: 3px; vertical-align: middle; white-space: nowrap; }
+    .badge-enacted   { background: #1a5fa8; color: #fff; }
+    .badge-resolved  { background: #2e7d32; color: #fff; }
+    .badge-submitted { background: #e65100; color: #fff; }
+    .badge-existing  { background: #546e7a; color: #fff; }
+    .badge-none      { background: #90a4ae; color: #fff; }
+    .src-official { display: inline-block; font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 10px; background: #e8f5e9; color: #1b5e20; border: 1px solid #66bb6a; margin-left: 3px; vertical-align: middle; }
+    .src-media    { display: inline-block; font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 10px; background: #fff8e1; color: #795548; border: 1px solid #ffb300; margin-left: 3px; vertical-align: middle; }
+
+    /* Legend */
+    .legend { display: flex; flex-wrap: wrap; gap: 6px 12px; margin: 8px 0 24px; font-size: 12px; align-items: center; }
+    .legend-item { display: flex; align-items: center; gap: 4px; }
+    .src-legend { font-size: 12px; margin-bottom: 18px; display: flex; gap: 12px; align-items: center; }
+
+    /* Main table */
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 26px; font-size: 12.5px; }
+    th { background: #1a3a6e; color: #fff; text-align: left; padding: 8px 11px; font-weight: 600; }
+    td { padding: 7px 11px; border-bottom: 1px solid #dde; vertical-align: top; }
+    tr:hover td { background: #f5f7fc; }
+    tr.new td { background: #fffde7; }
+    tr.notable td { background: #fce4ec; }
+
+    /* Ward detail sections */
+    .ward-section { border: 1px solid #d0d8e8; border-radius: 6px; padding: 16px 20px; margin-bottom: 18px; }
+    .ward-section h3 { margin-top: 0; }
+    ul.dl { padding-left: 20px; }
+    ul.dl li { margin-bottom: 5px; }
+    .source-block { margin-top: 10px; padding-top: 9px; border-top: 1px dashed #ccc; font-size: 11.5px; color: #555; line-height: 1.9; }
+    .source-block a { color: #1a5fa8; text-decoration: underline; }
+
+    .caution { background: #fff3e0; border-left: 4px solid #e65100; padding: 11px 16px; margin: 24px 0; font-size: 12.5px; }
+    .note { font-size: 11.5px; color: #666; margin: -10px 0 14px; }
+
+    footer { margin-top: 44px; padding-top: 14px; border-top: 1px solid #dde; font-size: 11px; color: #888; line-height: 1.8; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <h1>東京都23区　住宅宿泊事業・旅館業 条例動向レポート【完全版】</h1>
+  <div class="meta">作成日：2026年3月7日　｜　対象：東京都特別区23区全区　｜　調査範囲：住宅宿泊事業法（民泊新法）・旅館業法 上乗せ条例</div>
+
+  <div class="src-legend">
+    <strong>情報源種別：</strong>
+    <span><span class="src-official">区公式</span> 各区の公式ウェブサイト・条例・議会資料を直接確認</span>
+    <span><span class="src-media">報道等</span> 新聞等の報道（参考情報、公式確認推奨）</span>
+  </div>
+
+  <div class="legend">
+    <strong>ステータス：</strong>
+    <div class="legend-item"><span class="badge badge-enacted">施行済み</span>条例が効力を持ち実施中</div>
+    <div class="legend-item"><span class="badge badge-resolved">可決・施行待ち</span>議会可決・公布済み、施行日が未到来</div>
+    <div class="legend-item"><span class="badge badge-submitted">改正の動き</span>議会審議中・新旧対照表公表等</div>
+    <div class="legend-item"><span class="badge badge-existing">既存条例</span>現行条例が有効（近時改正なし）</div>
+    <div class="legend-item"><span class="badge badge-none">上乗せなし</span>民泊新法（国）のみ適用</div>
+  </div>
+
+  <!-- エグゼクティブサマリー -->
+  <div class="summary-box">
+    <strong>■ エグゼクティブサマリー（2026年3月時点）</strong>
+    <ul>
+      <li>従来「上乗せ条例なし」だった<strong>豊島区・墨田区・葛飾区</strong>が条例を制定。2026年4月以降、上乗せ条例なしは<strong>北区・江戸川区の2区のみ</strong>に縮小。</li>
+      <li><strong>豊島区</strong>は2025年12月に施行済み（2026年12月16日から既存施設にも120日制限が効力発生）。</li>
+      <li><strong>墨田区・葛飾区</strong>は2026年4月1日施行。墨田区は旅館業の常駐義務も同時に整備。</li>
+      <li><strong>千代田区</strong>は2026年第1回区議会定例会（2026年3月）に住宅宿泊事業条例・旅館業法施行条例の両改正案を提出中。</li>
+      <li><strong>江東区</strong>は「旅館業に関する規制のあり方検討委員会」（2025年10〜12月、3回開催）が12月25日に旅館業法施行条例の改正案を提示。議会提出に向けて手続き中。</li>
+      <li><strong>渋谷区</strong>は旅館業法施行条例の改正新旧対照表を公表済み。住宅宿泊事業の条例改正の動きも報道あり。</li>
+      <li><strong>新宿区</strong>は2025年12月に4事業者へ廃止命令を発令するなど、取締り強化が顕著。</li>
+      <li>規制の主流は「<strong>家主不在型の平日営業禁止</strong>（週末のみ）」と「<strong>旅館業への常駐義務の明確化</strong>」の2方向。</li>
+    </ul>
+  </div>
+
+
+  <!-- ============================
+       第1章：23区 全体条例一覧
+  ============================= -->
+  <h2>第1章　東京23区 住宅宿泊事業 条例状況 全体一覧</h2>
+  <p class="note">※ 黄色ハイライト行 = 2025〜2026年に新制定または改正動向あり。各区の公式サイトを直接調査した情報です。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:80px;">区名</th>
+        <th style="width:130px;">ステータス</th>
+        <th>制限区域</th>
+        <th>家主不在型の主な営業制限</th>
+        <th style="width:76px;">公式情報源</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="new">
+        <td><strong>千代田区</strong></td>
+        <td><span class="badge badge-submitted">改正案 議会提出中</span></td>
+        <td>文教地区・学校周辺100m、人口密集地域、オフィス系地域（家主不在型全面禁止）</td>
+        <td>現行：制限区域内は金〜日・祝日のみ営業可。2026年第1回区議会定例会に住宅宿泊事業条例・旅館業法施行条例の両改正案を提出中（区長招集挨拶で確認）。</td>
+        <td><a href="https://www.city.chiyoda.lg.jp/koho/kurashi/jutakushukuhakujigyo/jorei.html" target="_blank">千代田区</a></td>
+      </tr>
+      <tr>
+        <td><strong>中央区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>区内全域</td>
+        <td>土曜正午〜月曜正午のみ営業可。平日は全面禁止。23区最厳規制の一つ。</td>
+        <td><a href="https://www.city.chuo.lg.jp/a0030/kenkouiryou/eisei/seikatsueisei/minpaku/jyutakujyukuhakujigyojyorei.html" target="_blank">中央区</a></td>
+      </tr>
+      <tr>
+        <td><strong>港区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>第一・二種低層住居専用地域、第一・二種中高層住居専用地域、文教地区（家主不在型のみ）</td>
+        <td>制限期間：1/11正午〜3/20正午、4/11正午〜7/10正午、9/1正午〜12/20正午は禁止。春・夏・冬の各休暇期間のみ営業可。家主居住型は制限なし。</td>
+        <td><a href="https://www.city.minato.tokyo.jp/kankyoueiseishidou/minpaku2.html" target="_blank">港区</a></td>
+      </tr>
+      <tr>
+        <td><strong>新宿区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>住宅専用地域</td>
+        <td>月曜正午〜金曜正午は禁止（週末のみ：金正午〜月正午）。制限外地域は年180日以内。2025年12月に4事業者へ廃止命令（取締り強化）。</td>
+        <td><a href="https://www.city.shinjuku.lg.jp/kenkou/eisei03_002086.html" target="_blank">新宿区</a></td>
+      </tr>
+      <tr>
+        <td><strong>文京区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>住居専用地域・住居地域・準工業地域・文教地区</td>
+        <td>制限区域：日曜正午〜金曜正午まで禁止（金〜日のみ）。文教地区はさらに月〜木も禁止（詳細は条例参照）。</td>
+        <td><a href="https://www.city.bunkyo.lg.jp/b026/p003112/index.html" target="_blank">文京区</a></td>
+      </tr>
+      <tr>
+        <td><strong>台東区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>区内全域（常駐なしの場合）</td>
+        <td>管理者常駐なし：月曜正午〜土曜正午まで禁止（祝日・年末年始除く）。土正午〜月正午が営業可。管理者常駐ありは年間180日まで可。</td>
+        <td><a href="https://www.city.taito.lg.jp/kenchiku/jutaku/eisei/jutakulaw/minpanku20180613_003.html" target="_blank">台東区</a></td>
+      </tr>
+      <tr class="new">
+        <td><strong>墨田区</strong></td>
+        <td><span class="badge badge-resolved">可決・2026/4/1施行</span></td>
+        <td>区内全域（新規届出施設）</td>
+        <td>新規届出：常駐なしの場合、日曜正午〜金曜正午は禁止（金正午〜日正午のみ）。常駐ありは制限なし。旅館業も常駐義務化。既存施設は対象外。</td>
+        <td><a href="https://www.city.sumida.lg.jp/kenko_fukushi/eisei/juutaku_syukuhaku/kunotorikumi/minpakutorikumi.html" target="_blank">墨田区</a></td>
+      </tr>
+      <tr class="new">
+        <td><strong>江東区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span> <span class="badge badge-submitted">旅館業条例改正の動き</span></td>
+        <td>区内全域（住宅宿泊事業）</td>
+        <td>住宅宿泊事業：月曜正午〜土曜正午まで禁止（祝日の正午〜翌日正午は除く）。旅館業：「旅館業に関する規制のあり方検討委員会」が2025年10〜12月（3回）開催し、2025年12月25日第3回で条例改正案を提示。区議会への提出準備中。</td>
+        <td><a href="https://www.city.koto.lg.jp/260403/fukushi/ese/kankyo/minpaku_index.html" target="_blank">江東区（民泊）</a><br><a href="https://www.city.koto.lg.jp/260403/fukushi/ese/kankyo/ryokan_kisei.html" target="_blank">江東区（旅館業）</a></td>
+      </tr>
+      <tr>
+        <td><strong>品川区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>商業・近隣商業地域（文教地区除く）以外の全域</td>
+        <td>商業・近隣商業地域（文教地区除く）：制限なし（年180日）。それ以外：土曜正午〜月曜正午のみ可（祝日は営業不可）。</td>
+        <td><a href="https://www.city.shinagawa.tokyo.jp/PC/kenkou/kenkou-eisei/kenkou-eisei-kankyo/hpg000033251.html" target="_blank">品川区</a></td>
+      </tr>
+      <tr>
+        <td><strong>目黒区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>区内全域</td>
+        <td>日曜正午〜金曜正午まで禁止（週5日）。金曜正午〜日曜正午（金・土・日）のみ営業可。</td>
+        <td><a href="https://www.city.meguro.tokyo.jp/seikatsueisei/kenkoufukushi/eisei/minpaku.html" target="_blank">目黒区</a></td>
+      </tr>
+      <tr>
+        <td><strong>大田区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>住居専用地域・工業地域・工業専用地域・文教地区・特別業務地区・流通業務地区・特定地区計画区域</td>
+        <td>上記制限区域：家主不在型の新規届出は実施禁止（区域制限）。小中学校100m以内で新規届出の場合：月正午〜金正午は追加制限あり。特区民泊（国家戦略特区）は別制度。</td>
+        <td><a href="https://www.city.ota.tokyo.jp/seikatsu/hoken/eisei/riyoubiyou/minpaku_shinpou.html" target="_blank">大田区</a></td>
+      </tr>
+      <tr>
+        <td><strong>世田谷区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>住居専用地域</td>
+        <td>月曜正午〜土曜正午まで禁止（休日の正午〜翌日正午は除く）。土正午〜月正午＋祝日のみ営業可。区長認定区域は緩和可能。</td>
+        <td><a href="https://www.city.setagaya.lg.jp/02245/3247.html" target="_blank">世田谷区</a></td>
+      </tr>
+      <tr class="new">
+        <td><strong>渋谷区</strong></td>
+        <td><span class="badge badge-submitted">旅館業条例改正の動き</span></td>
+        <td>住居専用地域・文教地区（現行）</td>
+        <td>現行：制限区域で4/5〜7/20、8/29〜10月第2月曜前週水曜、同前週土〜12/25、1/7〜3/25は禁止（学期中禁止）。旅館業法施行条例の改正新旧対照表を公表済み。住宅宿泊事業の改正案も動き中。</td>
+        <td><a href="https://www.city.shibuya.tokyo.jp/kenko/eisei/kankyo/minpaku.html" target="_blank">渋谷区</a></td>
+      </tr>
+      <tr>
+        <td><strong>中野区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>住居専用地域等（制限区域）</td>
+        <td>制限区域：金・土・日・祝日のみ営業可（平日は禁止）。家主同居型で区長許可取得の場合は平日可。制限外区域は年180日以内。</td>
+        <td><a href="https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/pet-eisei/kankyoueisei/jyutakusyukuhaku.html" target="_blank">中野区</a></td>
+      </tr>
+      <tr>
+        <td><strong>杉並区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>住居専用地域（家主不在型のみ）</td>
+        <td>住居専用地域・家主不在型：月〜金の平日（月正午〜金正午）は禁止。金〜日・祝日のみ営業可。家主居住型は制限なし。</td>
+        <td><a href="https://www.city.suginami.tokyo.jp/s046/871.html" target="_blank">杉並区</a></td>
+      </tr>
+      <tr class="new">
+        <td><strong>豊島区</strong></td>
+        <td><span class="badge badge-enacted">施行済み（経過措置中）</span></td>
+        <td>区内約70%（新設制限区域）</td>
+        <td>2025/12/15施行。2026/12/16から既存施設も含め年間120日以内に制限（夏冬休み等の期間のみ）。新設制限区域を50%→70%に拡大。近隣説明会義務化。違反には5万円以下の過料。</td>
+        <td><a href="https://www.city.toshima.lg.jp/214/kurashi/ese/kankyoese/minpaku/kaisei.html" target="_blank">豊島区</a></td>
+      </tr>
+      <tr>
+        <td><strong>北区</strong></td>
+        <td><span class="badge badge-none">上乗せ条例なし</span></td>
+        <td>なし</td>
+        <td>民泊新法の規定のみ適用（年間180日以内）。近隣住民への事前周知等の区独自ルールあり。2025年1月に「北区住宅宿泊事業協議会（第1回）」を開催し、民泊の実態把握・規制強化に向けた検討を開始。条例制定動向を継続監視のこと。</td>
+        <td><a href="https://www.city.kita.lg.jp/socialcare-health/hygiene/1008979/1008980/1008989/1008990.html" target="_blank">北区（民泊）</a></td>
+      </tr>
+      <tr>
+        <td><strong>荒川区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>区内全域</td>
+        <td>月曜正午〜土曜正午まで禁止（祝日の正午〜翌日正午は除く）。土正午〜月正午＋祝日のみ営業可。</td>
+        <td><a href="https://www.city.arakawa.tokyo.jp/reiki_int/reiki_honbun/p800RG00001216.html" target="_blank">荒川区</a></td>
+      </tr>
+      <tr>
+        <td><strong>板橋区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>住居専用地域</td>
+        <td>制限区域：日曜正午〜金曜正午まで禁止（休日前日正午〜翌日正午は除く）。金〜日・祝日のみ営業可。家主居住型（自ら管理業務を行う者）は制限外。</td>
+        <td><a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/kankyo/ryokan/1003882.html" target="_blank">板橋区</a></td>
+      </tr>
+      <tr>
+        <td><strong>練馬区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>住居専用地域（建物の過半が住居専用地域の場合を含む）</td>
+        <td>月曜正午〜金曜正午まで禁止。金正午〜月正午＋祝日前日正午〜翌日正午が営業可。</td>
+        <td><a href="https://www.city.nerima.tokyo.jp/hokenfukushi/eisei/minpaku/minnpaku.html" target="_blank">練馬区</a></td>
+      </tr>
+      <tr>
+        <td><strong>足立区</strong></td>
+        <td><span class="badge badge-existing">既存条例</span></td>
+        <td>住居専用地域（第一・二種低層、第一・二種中高層）</td>
+        <td>月曜正午〜金曜正午まで禁止（祝日は除く）。加えて年末年始（12/31正午〜翌年1/3正午）も禁止。金正午〜月正午＋祝日が営業可（年末年始除く）。</td>
+        <td><a href="https://www.city.adachi.tokyo.jp/sekatsuese/minpakujourei.html" target="_blank">足立区</a></td>
+      </tr>
+      <tr class="new">
+        <td><strong>葛飾区</strong></td>
+        <td><span class="badge badge-resolved">公布・2026/4/1施行</span></td>
+        <td>（2026/4/1以降、条例本文で確認のこと）</td>
+        <td>2025/12/17公布（令和7年12月17日）、2026/4/1施行。商業地域を除く全域で<strong>月曜正午〜土曜正午まで禁止</strong>（土正午〜月正午のみ）。管理業者常駐の場合は制限なし（180日）。近隣住民への事前周知義務（区指定様式）。旅館業施設の標識掲示義務（既存施設の申込期限：2026年3月13日）。ゴミは「事業系ごみ」として事業者が適正処理。※制限時間帯の詳細は条例本文PDFで最終確認を推奨。</td>
+        <td><a href="https://www.city.katsushika.lg.jp/online/1007359/1030292/1007374/1007411/1040682.html" target="_blank">葛飾区</a></td>
+      </tr>
+      <tr class="new">
+        <td><strong>江戸川区</strong></td>
+        <td><span class="badge badge-none">上乗せ条例なし</span><br><small style="color:#666;">条例制定を検討中</small></td>
+        <td>なし（ガイドラインあり）</td>
+        <td>民泊新法のみ適用（年間180日以内）。区公式サイトで「住宅宿泊事業（民泊）の条例等の制定を検討しています」と明記済み。ガイドラインで独自規制あり：居室数5超または家主不在型は管理業者委託必須（30分以内駆けつけ体制）。開業前に区の講習会受講必須。周辺住民への事前周知（10m以内）必須。</td>
+        <td><a href="https://www.city.edogawa.tokyo.jp/kenko/eisei/kankyo/syukuhakujigyoho/index.html" target="_blank">江戸川区</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- ============================
+       第2章：最新制定・改正 詳細
+  ============================= -->
+  <h2>第2章　2025〜2026年 新規制定・改正の詳細</h2>
+
+  <!-- 千代田区 -->
+  <div class="ward-section">
+    <h3>千代田区　<span class="badge badge-submitted">改正案 議会提出中（2026年第1回定例会）</span></h3>
+    <ul class="dl">
+      <li><strong>改正対象条例（2本）：</strong>
+        <ul>
+          <li>「千代田区住宅宿泊事業の適正な運営の確保に関する条例」改正案</li>
+          <li>「千代田区旅館業法施行条例」改正案</li>
+        </ul>
+      </li>
+      <li><strong>現行の制限区域（3類型）と管理者タイプ別制限：</strong>
+        <table style="font-size:11.5px;width:100%;border-collapse:collapse;margin:8px 0;">
+          <tr style="background:#e8edf5;"><th style="padding:5px 8px;text-align:left;border:1px solid #ccc;">制限区域</th><th style="padding:5px 8px;border:1px solid #ccc;">家主居住型・管理者常駐型</th><th style="padding:5px 8px;border:1px solid #ccc;">管理者駆けつけ型</th></tr>
+          <tr><td style="padding:5px 8px;border:1px solid #ccc;">文教地区・学校敷地境界線から概ね100m以内</td><td style="padding:5px 8px;border:1px solid #ccc;">日正午〜金正午は禁止（金〜日・祝日のみ可）</td><td style="padding:5px 8px;border:1px solid #ccc;color:#c00;font-weight:bold;">全日不可</td></tr>
+          <tr><td style="padding:5px 8px;border:1px solid #ccc;">学校等周辺（100m以内）</td><td style="padding:5px 8px;border:1px solid #ccc;">日正午〜金正午は禁止（金〜日・祝日のみ可）</td><td style="padding:5px 8px;border:1px solid #ccc;color:#c00;font-weight:bold;">全日不可</td></tr>
+          <tr><td style="padding:5px 8px;border:1px solid #ccc;">人口密集区域</td><td style="padding:5px 8px;border:1px solid #ccc;">年間180日まで可</td><td style="padding:5px 8px;border:1px solid #ccc;">日正午〜金正午は禁止</td></tr>
+        </table>
+      </li>
+      <li><strong>旅館業（現行）：</strong>玄関帳場の設置＋従業員の常駐を千代田区が義務指導。「宿泊者名簿に記載するためのカウンター等を設けること」「利用者の出入の際、営業者と利用者が必ず応接できる構造とすること」を規定。</li>
+      <li><strong>改正案の状況：</strong>2026年2月17日付の区長招集挨拶（樋口高顕区長）で令和8年第1回区議会定例会に両改正案を提案することを正式表明。改正の柱は「<strong>宿泊施設の新設に関する制限強化</strong>」と「<strong>周辺地域への周知強化</strong>」の2点。</li>
+      <li><strong>改正の背景：</strong>訪日外国人旅行者の増加に伴い施設数が急増し、違法民泊への通報増加、騒音・ゴミ問題、スーツケースを持った旅行者の出入りによる住民不安などが問題化。検討会議では「管理者常駐型規制を全国初の思い切った規制として提案」する意見も出た。</li>
+    </ul>
+    <div class="source-block">
+      <span class="src-official">区公式</span> <a href="https://www.city.chiyoda.lg.jp/koho/kurashi/jutakushukuhakujigyo/jorei.html" target="_blank">千代田区「住宅宿泊事業に関する条例・ガイドライン」</a><br>
+      <span class="src-official">区公式（区長招集挨拶）</span> 2026年第1回区議会定例会 区長招集挨拶（住宅宿泊事業条例・旅館業法施行条例の両改正案提出を明言）
+    </div>
+  </div>
+
+  <!-- 江東区 -->
+  <div class="ward-section">
+    <h3>江東区　<span class="badge badge-submitted">旅館業法施行条例 改正案の動き</span></h3>
+    <ul class="dl">
+      <li><strong>住宅宿泊事業（現行）：</strong>区内全域で月曜正午〜土曜正午まで禁止（祝日の正午〜翌日正午は除く）。土正午〜月正午＋祝日のみ営業可。</li>
+      <li><strong>旅館業法施行条例の改正検討：</strong>
+        <ul>
+          <li>「江東区旅館業に関する規制のあり方検討委員会」を設置し、2025年10月〜12月に3回開催。</li>
+          <li>第1回（2025年10月9日）：現状課題の共有</li>
+          <li>第2回（2025年11月6日）：改正の骨子案を提示</li>
+          <li>第3回（2025年12月25日）：「江東区旅館業法施行条例の一部を改正する条例」改正案を提示</li>
+          <li>区議会への改正案提出準備中（時期は区公式サイトで確認のこと）。</li>
+        </ul>
+      </li>
+      <li><strong>現行の旅館業法施行条例（令和5年12月13日最終改正）の主要規定：</strong>
+        <ul>
+          <li>常駐義務（第9条第1号）：宿泊者滞在中は常時、営業者自ら又は営業従事者を勤務させること（緊急対応体制整備で除外可）</li>
+          <li>フロント設置（第11条第1号）：旅館・ホテル営業に「玄関帳場その他これに類する設備」の設置義務</li>
+          <li>客室面積基準：旅館・ホテル/下宿 3㎡/人、簡易宿所 1.5㎡/人</li>
+        </ul>
+      </li>
+      <li><strong>改正案の方向性（第3回委員会 2025年12月25日提示）：</strong>
+        <ul>
+          <li><strong>新規事業者（施行日以降）：</strong>常駐義務を強化。第9条ただし書き（緊急対応体制整備で除外可）を廃止または制限方向。現行の「通常徒歩10分程度の駆け付け体制」での代替を不可とする方向。</li>
+          <li><strong>既存事業者：</strong>常駐義務ではなく、施設の<strong>連絡先掲示義務</strong>と、営業従事者による<strong>毎日の施設確認義務</strong>を適用。</li>
+          <li>違反に対する命令 → 従わない場合は<strong>過料（条例独自の罰則）</strong>という段階的罰則の設置。</li>
+          <li><strong>玄関帳場（第11条）：</strong>「玄関から容易に見える位置・直接面接できる構造」という物理的対面要件を強化。ビデオカメラによる代替（現行規則第19条のただし書き）の適用を制限または廃止方向。</li>
+          <li>区民意見募集（2025年12月1日〜19日）終了。令和8年第1回区議会定例会への提出が想定される。</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="source-block">
+      <span class="src-official">区公式</span> <a href="https://www.city.koto.lg.jp/260403/fukushi/ese/kankyo/ryokan_kisei.html" target="_blank">江東区「旅館業に関する規制のあり方検討委員会」</a><br>
+      <span class="src-official">区公式（民泊）</span> <a href="https://www.city.koto.lg.jp/260403/fukushi/ese/kankyo/minpaku_index.html" target="_blank">江東区「住宅宿泊事業（民泊）」</a>
+    </div>
+  </div>
+
+  <!-- 豊島区 -->
+  <div class="ward-section">
+    <h3>豊島区　<span class="badge badge-enacted">施行済み（2025年12月15日）</span>　本格効力：2026年12月16日〜</h3>
+    <ul class="dl">
+      <li><strong>条例名：</strong>「豊島区住宅宿泊事業の適正な運営の確保に関する条例」改正</li>
+      <li><strong>施行日：</strong>2025年12月15日。区域・期間制限の効力は2026年12月16日から（既存施設への経過措置1年間）。</li>
+      <li><strong>主な改正内容：</strong>
+        <ul>
+          <li>年間営業日数上限：180日 → <strong>120日以内</strong>に削減</li>
+          <li><strong>営業可能な「休暇期間」の定義：</strong>
+            <ul>
+              <li>春休み：<strong>3月15日〜4月10日</strong></li>
+              <li>夏休み：<strong>7月1日〜8月31日</strong></li>
+              <li>冬休み：<strong>12月15日〜翌年1月14日</strong></li>
+            </ul>
+          </li>
+          <li>新設制限区域：区内約50% → <strong>約70%</strong>に拡大（第一・二種住居専用地域・住居地域・準工業地域・文教地区）</li>
+          <li>既存施設への遡及適用あり（経過措置後の2026年12月16日〜）</li>
+          <li>手続き強化：届出時添付書類変更、開業前近隣説明会実施義務（周知範囲：20m以内）</li>
+          <li>罰則新設：違反事業者に<strong>5万円以下の過料</strong></li>
+        </ul>
+      </li>
+      <li><strong>背景：</strong>区内届出住宅数が1,700件超に達し、騒音・ゴミ等の苦情急増。パブリックコメントに263件の意見。</li>
+    </ul>
+    <div class="source-block">
+      <span class="src-official">区公式</span> <a href="https://www.city.toshima.lg.jp/214/kurashi/ese/kankyoese/minpaku/kaisei.html" target="_blank">豊島区「住宅宿泊事業法の条例を改正しました」</a><br>
+      <span class="src-official">区公式</span> <a href="https://www.city.toshima.lg.jp/214/kurashi/ese/kankyoese/public/jyuutakusyukuhaku-kekka.html" target="_blank">豊島区「条例改正案 パブリックコメント結果」</a>
+    </div>
+  </div>
+
+  <!-- 墨田区 -->
+  <div class="ward-section">
+    <h3>墨田区　<span class="badge badge-resolved">可決・公布済み（2025年12月10日）　2026年4月1日施行</span></h3>
+    <ul class="dl">
+      <li><strong>制定条例（2本）：</strong>
+        <ul>
+          <li>「墨田区住宅宿泊事業の適正な運営に関する条例」（令和7年墨田区条例第53号）</li>
+          <li>「旅館業法施行条例の一部を改正する条例」（令和7年墨田区条例第52号）</li>
+        </ul>
+      </li>
+      <li><strong>住宅宿泊事業（新規届出施設）：</strong>区内全域に適用。管理形態別の制限：
+        <table style="font-size:11.5px;width:100%;border-collapse:collapse;margin:8px 0;">
+          <tr style="background:#e8edf5;"><th style="padding:5px 8px;text-align:left;border:1px solid #ccc;">管理形態</th><th style="padding:5px 8px;border:1px solid #ccc;">営業可能時間帯</th><th style="padding:5px 8px;border:1px solid #ccc;">備考</th></tr>
+          <tr><td style="padding:5px 8px;border:1px solid #ccc;">家主同居型（届出者が施設内に居住・常駐）</td><td style="padding:5px 8px;border:1px solid #ccc;color:#2e7d32;font-weight:bold;">年間180日まで毎日可</td><td style="padding:5px 8px;border:1px solid #ccc;">制限対象外</td></tr>
+          <tr><td style="padding:5px 8px;border:1px solid #ccc;">管理業者常駐型（住宅宿泊管理業者が施設内・同一敷地内に常時在駐）</td><td style="padding:5px 8px;border:1px solid #ccc;color:#2e7d32;font-weight:bold;">年間180日まで毎日可</td><td style="padding:5px 8px;border:1px solid #ccc;">制限対象外</td></tr>
+          <tr><td style="padding:5px 8px;border:1px solid #ccc;">無人・遠隔管理型（ICTチェックイン・駆け付けのみ）</td><td style="padding:5px 8px;border:1px solid #ccc;color:#c00;font-weight:bold;">金曜正午〜日曜正午のみ</td><td style="padding:5px 8px;border:1px solid #ccc;">日曜正午〜金曜正午は禁止</td></tr>
+        </table>
+        <strong>既存施設（条例施行前に届出済み）は当面適用外（経過措置）。</strong>
+      </li>
+      <li><strong>旅館業（令和7年墨田区条例第52号）改正の具体的内容：</strong>
+        <ul>
+          <li><strong>常駐義務：</strong>宿泊者が滞在している間、営業従事者を<strong>施設内または同一敷地内に常駐</strong>させること（ICT等による無人チェックイン＋30分以内の駆け付けのみでは不可）</li>
+          <li><strong>設備要件（新規申請）：</strong>スタッフ用<strong>居室</strong>を施設内に設けること、<strong>流水式手洗い付きの便所</strong>を施設内に設けること（設計段階からの組み込みが必要）</li>
+          <li><strong>既存の旅館業法施行条例規定（現行）：</strong>客室1.5㎡/人（簡易宿所）、採光基準（窓からの採光）、便所は各階設置・防虫防臭設備・手洗い設備</li>
+        </ul>
+      </li>
+      <li><strong>情報公表：</strong>届出事業者の連絡先・所在地を区が公表。業務改善命令・業務停止命令不遵守の事業者や平日制限違反施設の名称・所在地等も公表。</li>
+      <li><strong>運営強化：</strong>開業前説明会・標識掲示の義務化。届出・違反者情報の公表。</li>
+      <li><strong>体制整備：</strong>2026年1月に「民泊対策担当」副参事ポストを新設。全庁横断プロジェクトチーム発足。2026年4月1日に「すみだ民泊総合窓口」開設予定。</li>
+    </ul>
+    <div class="source-block">
+      <span class="src-official">区公式</span> <a href="https://www.city.sumida.lg.jp/kenko_fukushi/eisei/juutaku_syukuhaku/kunotorikumi/minpakutorikumi.html" target="_blank">墨田区「条例の施行に向けた区の取組」</a><br>
+      <span class="src-official">区公式</span> <a href="https://www.city.sumida.lg.jp/kenko_fukushi/eisei/juutaku_syukuhaku/kunotorikumi/kiseikentou.html" target="_blank">墨田区「住宅宿泊事業等の規制のあり方に関する検討」</a><br>
+      <span class="src-official">区公式（議会陳情）</span> <a href="https://www.city.sumida.lg.jp/kugikai/sinsa_report/seigan_chinjo/r7seitin.files/7.pdf" target="_blank">墨田区議会「条例案に関する陳情審査報告書」（PDF）</a>
+    </div>
+  </div>
+
+  <!-- 葛飾区 -->
+  <div class="ward-section">
+    <h3>葛飾区　<span class="badge badge-resolved">公布済み（2025年12月17日）　2026年4月1日施行</span></h3>
+    <ul class="dl">
+      <li><strong>制定条例（2本）：</strong>
+        <ul>
+          <li>「葛飾区住宅宿泊事業の適正な運営の確保に関する条例」</li>
+          <li>「葛飾区旅館業法施行条例の一部を改正する条例」</li>
+        </ul>
+      </li>
+      <li><strong>住宅宿泊事業の制限（商業地域を除く全域）：</strong>
+        <ul>
+          <li>家主不在型：<strong>月曜正午〜土曜正午まで禁止</strong>（土曜正午〜月曜正午のみ営業可）</li>
+          <li>管理業者常駐の場合：制限対象外（年間180日以内で毎日営業可）</li>
+          <li>既存施設（条例施行前届出済み）：当面適用外（経過措置）</li>
+          <li>※条例本文PDFで最終確認を推奨（「月〜金禁止」説もあり）</li>
+        </ul>
+      </li>
+      <li><strong>近隣住民への事前周知義務：</strong>開業前に「周辺周知説明資料」（在宅型用・不在型用の区提供様式）を配布し、「事前周知内容記録書」を提出必須。</li>
+      <li><strong>旅館業（令和8年4月1日施行・条例改正）：</strong>
+        <ul>
+          <li><strong>標識掲示義務（第7条第2項）：</strong>公衆の見やすい場所に<strong>管理者等の氏名および緊急連絡先</strong>を掲示すること（区が指定する様式で）。客室が複数の場合は各客室の入口に室番号・室名を表示。</li>
+          <li><strong>既存施設の手続き：</strong>2026年3月13日（金）までに申請 → 標識は2026年5〜6月頃に区から郵送 → 掲示期限：2026年9月末</li>
+          <li><strong>改正の背景：</strong>「営業従事者が施設内に常駐しない小規模な旅館業施設が急増し、宿泊者による苦情が多発している」と区公式ページで明示。</li>
+          <li><strong>現行の旅館業法施行条例主要規定：</strong>客室1.5㎡/人（簡易宿所）、3㎡/人（旅館・ホテル）、浴槽の遊離残留塩素濃度0.4mg以上維持（第5条）</li>
+        </ul>
+      </li>
+      <li><strong>ごみ処理：</strong>宿泊者排出ごみを「事業系ごみ」として事業者が適正処理（地域の集積所への一般ごみとしての排出は禁止）。</li>
+      <li><strong>事業者向け講習会：</strong>2026年2月3日に区が実施済み。</li>
+    </ul>
+    <div class="source-block">
+      <span class="src-official">区公式</span> <a href="https://www.city.katsushika.lg.jp/online/1007359/1030292/1007374/1007411/1040682.html" target="_blank">葛飾区「住宅宿泊事業（民泊）及び旅館業の事業者向けのお知らせ」</a><br>
+      <span class="src-official">区公式</span> <a href="https://www.city.katsushika.lg.jp/online/1007359/1030292/1007374/1007411/1039684.html" target="_blank">葛飾区「住宅宿泊事業（民泊）について」</a><br>
+      <span class="src-official">区公式（条例）</span> <a href="https://www.city.katsushika.lg.jp/keikaku/reiki_int/reiki_honbun/g123RG00000832.html" target="_blank">葛飾区旅館業法施行条例</a>
+    </div>
+  </div>
+
+  <!-- 渋谷区 -->
+  <div class="ward-section">
+    <h3>渋谷区　<span class="badge badge-submitted">旅館業法施行条例 改正の動き</span></h3>
+    <ul class="dl">
+      <li><strong>現行条例（住宅宿泊事業）：</strong>住居専用地域・文教地区において学期中（4/5〜7/20、8/29〜10月第2月曜前週水曜、同前週土曜〜12/25、1/7〜3/25）は営業禁止。各休暇期間のみ営業可。<strong>特例措置：</strong>届出住宅の敷地から100m以内に「自己の生活本拠」または「管理業者の営業所」がある場合は年間180日の実施が可能（上記期間制限を受けない）。</li>
+      <li><strong>旅館業法施行条例（令和4年1月1日改正施行）：</strong>
+        <ul>
+          <li>玄関帳場（フロント）代替要件を第7条第1号で規定：以下の<strong>3要件すべて</strong>を満たす場合のみ玄関帳場なしを認める：①おおむね10分で職員等が駆け付けることができる体制の整備、②区が設置したビデオカメラ等を使用した常時鮮明な画像による宿泊者本人確認・出入り状況確認、③対面その他確実な方法による鍵の受け渡し・解錠方法説明。</li>
+          <li>区公式サイトで改正新旧対照表（PDF）を公表済み。</li>
+        </ul>
+      </li>
+      <li><strong>住宅宿泊事業の改正動向：</strong>公式ページ上では住宅宿泊事業条例の新たな改正案は2026年3月時点で未確認。最新状況は区公式サイト・議事録を直接確認のこと。</li>
+    </ul>
+    <div class="source-block">
+      <span class="src-official">区公式</span> <a href="https://www.city.shibuya.tokyo.jp/kenko/eisei/kankyo/minpaku.html" target="_blank">渋谷区「住宅宿泊事業（民泊）について」</a><br>
+      <span class="src-official">区公式（旅館業条例改正 新旧対照表）</span> <a href="https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/1dc708bf7c28452490da2e27fb76d8fe/assets_kurashi_000060737.pdf" target="_blank">渋谷区旅館業法施行条例 改正新旧対照表（PDF）</a><br>
+      <span class="src-official">区公式（旅館業）</span> <a href="https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-eisei/kankyo-eisei/ryokangyo.html" target="_blank">渋谷区「旅館業について」</a>
+    </div>
+  </div>
+
+
+  <!-- ============================
+       第2.5章：旅館業条例の主要規制
+  ============================= -->
+  <h2>第2.5章　旅館業法施行条例の主要規制一覧（各区比較）</h2>
+  <p class="note">※ 各区の旅館業法施行条例（区独自の上乗せ規制）に基づく主要規定の比較。国の旅館業法に加え、各区が条例で独自の基準を定めている。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:70px;">区名</th>
+        <th style="width:80px;">常駐義務</th>
+        <th>フロント（玄関帳場）設置</th>
+        <th>客室面積基準</th>
+        <th>主な最近改正</th>
+        <th style="width:70px;">情報源</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="new">
+        <td><strong>千代田区</strong></td>
+        <td>義務（現行）</td>
+        <td>玄関帳場設置・従業員常駐を明示義務付け。「宿泊者名簿に記載するためのカウンター等を設けること」と規定。</td>
+        <td>国基準準拠</td>
+        <td><span class="badge badge-submitted">2026年第1回定例会に改正案提出中</span></td>
+        <td><a href="https://www.city.chiyoda.lg.jp/koho/kurashi/kankyoese/egyo/ryokan.html" target="_blank">千代田区</a></td>
+      </tr>
+      <tr>
+        <td><strong>中央区</strong></td>
+        <td>—</td>
+        <td>—</td>
+        <td>旅館・ホテル：<strong>6.6㎡以上/人</strong>、簡易宿所：<strong>7㎡以上/人</strong>（令和4年1月改正）</td>
+        <td>令和4年1月改正（客室面積基準引き上げ）</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>港区</strong></td>
+        <td>—</td>
+        <td>—</td>
+        <td>国基準準拠</td>
+        <td>令和5年12月13日改正（条項番号修正・浴室規定統合等、内容的変更は軽微）</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>新宿区</strong></td>
+        <td>—</td>
+        <td>—</td>
+        <td>国基準準拠</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr class="new">
+        <td><strong>墨田区</strong></td>
+        <td><span style="color:#c00;font-weight:bold;">施設内/同一敷地内に常駐義務（2026/4/1〜）</span></td>
+        <td>管理者室・事務所設置（スタッフ用居室 + 流水式手洗い付き便所を施設内設置）</td>
+        <td>簡易宿所：1.5㎡/人、窓からの採光確保</td>
+        <td><span class="badge badge-resolved">令和7年墨田区条例第52号（2026/4/1施行）</span></td>
+        <td><a href="https://www.city.sumida.lg.jp/wkg/reiki_int/reiki_honbun/g108RG00001611.html" target="_blank">条例本文</a></td>
+      </tr>
+      <tr class="new">
+        <td><strong>江東区</strong></td>
+        <td>常駐（第9条第1号）。現行：10分以内駆け付け体制で代替可。<span style="color:#c00;font-weight:bold;">改正案：新規事業者の代替を廃止方向</span></td>
+        <td>玄関帳場（第11条第1号）。現行：ビデオカメラ+対面鍵渡しで代替可。<span style="color:#c00;font-weight:bold;">改正案：代替要件を厳格化方向</span></td>
+        <td>旅館・ホテル：3㎡/人、簡易宿所：1.5㎡/人</td>
+        <td><span class="badge badge-submitted">改正案提示中（2025年12月25日委員会）</span></td>
+        <td><a href="https://www.city.koto.lg.jp/reiki-koho/reiki_honbun/g109RG00001807.html" target="_blank">条例本文</a></td>
+      </tr>
+      <tr>
+        <td><strong>世田谷区</strong></td>
+        <td>—</td>
+        <td>—</td>
+        <td>国基準準拠</td>
+        <td>申請手数料：旅館・ホテル <strong>30,600円</strong>、簡易宿所 <strong>16,500円</strong></td>
+        <td><a href="https://www.city.setagaya.lg.jp/02245/3225.html" target="_blank">世田谷区</a></td>
+      </tr>
+      <tr class="new">
+        <td><strong>渋谷区</strong></td>
+        <td>—（現行：10分駆け付け体制+ビデオカメラ+対面鍵渡しで代替可）</td>
+        <td>第7条第1号で玄関帳場代替要件を規定（おおむね10分で職員等が駆け付け可能な体制・ビデオカメラ・対面鍵渡し、3要件全て必要）</td>
+        <td>国基準準拠</td>
+        <td>令和4年1月1日施行（旅館業法施行条例改正）。新旧対照表公表済み。</td>
+        <td><a href="https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-eisei/kankyo-eisei/ryokangyo.html" target="_blank">渋谷区</a></td>
+      </tr>
+      <tr>
+        <td><strong>杉並区</strong></td>
+        <td>—</td>
+        <td>—</td>
+        <td>国基準準拠</td>
+        <td>令和5年12月13日改正：①宿泊拒否事由追加、②感染防止措置、③差別的言動の防止、④事業譲渡時の手続き規定追加</td>
+        <td><a href="https://www.city.suginami.tokyo.jp/s046/871.html" target="_blank">杉並区</a></td>
+      </tr>
+      <tr>
+        <td><strong>荒川区</strong></td>
+        <td>常駐（宿泊者滞在中）</td>
+        <td>フロント設置義務あり</td>
+        <td>旅館・ホテル：3㎡/人、簡易宿所：1.5㎡/人</td>
+        <td>—</td>
+        <td><a href="https://www.city.arakawa.tokyo.jp/reiki_int/reiki_honbun/p800RG00001216.html" target="_blank">荒川区</a></td>
+      </tr>
+      <tr>
+        <td><strong>北区</strong></td>
+        <td>原則として常駐。ただし簡易宿所は「一定の体制整備」を条件として例外あり</td>
+        <td>—</td>
+        <td>国基準準拠</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr class="new">
+        <td><strong>葛飾区</strong></td>
+        <td>—</td>
+        <td>—</td>
+        <td>旅館・ホテル：3㎡/人、簡易宿所：1.5㎡/人</td>
+        <td><span class="badge badge-resolved">令和8年4月1日施行：標識掲示義務（管理者氏名・緊急連絡先）新設</span></td>
+        <td><a href="https://www.city.katsushika.lg.jp/online/1007359/1030292/1007374/1007411/1041010.html" target="_blank">葛飾区</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="note">※「—」は区条例に明示規定なし（国の旅館業法の基準が適用）。「国基準準拠」の場合でも、各区の保健所が独自の運用指導を行う場合あり。</p>
+
+
+  <!-- ============================
+       第3章：行政取締り強化
+  ============================= -->
+  <h2>第3章　行政による取締り・執行強化の動向</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:80px;">区名</th>
+        <th>取締り・執行内容</th>
+        <th style="width:95px;">時期</th>
+        <th style="width:80px;">情報源</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>新宿区</strong></td>
+        <td>4事業者に住宅宿泊事業の<strong>廃止命令</strong>を発令。内訳：<strong>3者＝報告義務違反の繰り返し（改善命令に従わず）</strong>、<strong>1者＝業務停止命令中にも営業を継続</strong>。廃止命令を受けた事業者は以後<strong>3年間</strong>同事業を行えない。違反事業者情報を区HPで公表。</td>
+        <td>2025年12月4日</td>
+        <td><span class="src-official">区公式</span> <a href="https://www.city.shinjuku.lg.jp/whatsnew/pub/2025/1205-02.html" target="_blank">新宿区</a></td>
+      </tr>
+      <tr>
+        <td><strong>豊島区</strong></td>
+        <td>条例改正に伴い違反事業者への<strong>過料（5万円以下）制度</strong>を新設。</td>
+        <td>2025年12月〜</td>
+        <td><span class="src-official">区公式</span> <a href="https://www.city.toshima.lg.jp/214/kurashi/ese/kankyoese/minpaku/kaisei.html" target="_blank">豊島区</a></td>
+      </tr>
+      <tr>
+        <td><strong>墨田区</strong></td>
+        <td>届出・違反者情報の公表制度を条例に明記。「民泊対策担当」副参事ポストおよびプロジェクトチームを新設。「すみだ民泊総合窓口」を2026年4月開設。</td>
+        <td>2026年1月〜4月</td>
+        <td><span class="src-official">区公式</span> <a href="https://www.city.sumida.lg.jp/kenko_fukushi/eisei/juutaku_syukuhaku/kunotorikumi/minpakutorikumi.html" target="_blank">墨田区</a></td>
+      </tr>
+      <tr>
+        <td><strong>新宿区</strong></td>
+        <td>住宅宿泊事業法違反者の公表ページを常設・随時更新。</td>
+        <td>継続</td>
+        <td><span class="src-official">区公式</span> <a href="https://www.city.shinjuku.lg.jp/kenkou/eisei03_000001_00031.html" target="_blank">新宿区</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- ============================
+       第4章：管理代行事業者への示唆
+  ============================= -->
+  <h2>第4章　管理運営代行事業者への対応方針</h2>
+
+  <h3>① 緊急対応が必要な区（2026年中）</h3>
+  <ul class="dl">
+    <li><strong>豊島区：</strong>2026年12月16日以降、既存物件も年間120日制限に遡及適用。今から営業スケジュールの再設計・オーナーへの説明が急務。春休み（3/15〜4/10）・夏休み（7/1〜8/31）・冬休み（12/15〜1/14）の計120日のみ営業可となる。</li>
+    <li><strong>墨田区（2026年4月1日〜）：</strong>新規届出物件は週末のみ（金正午〜日正午）。旅館業許可物件は常駐体制（施設内または同一敷地内）の確認を急ぐ。すみだ民泊総合窓口（2026年4月開設）を活用。</li>
+    <li><strong>葛飾区（2026年4月1日〜）：</strong>旅館業施設の標識掲示義務（既存施設の申込期限：2026年3月13日）への対応を即時確認。新規届出の際は近隣住民への事前周知書類（区指定様式）整備が必須。</li>
+    <li><strong>大田区 特区民泊（国家戦略特区）：</strong>2026年4月から規制強化：①近隣周知範囲が<strong>10m以内→20m以内</strong>に拡大、②管理業者の駆け付け要件が「自動車10分以内→<strong>徒歩10分以内</strong>」に厳格化、③ごみ収集が<strong>週3回以上</strong>に義務強化。特区民泊を活用した物件は大田区の最新ガイドラインを確認のこと。</li>
+  </ul>
+
+  <h3>② 千代田区・江東区・渋谷区の改正動向を継続監視</h3>
+  <ul class="dl">
+    <li><strong>千代田区：</strong>2026年第1回区議会定例会（3月）に住宅宿泊事業条例・旅館業法施行条例の両改正案を提出中。議会審議の行方を注視。改正内容により、管理物件の届出・許可更新手続きに影響が出る可能性あり。</li>
+    <li><strong>江東区：</strong>旅館業法施行条例の改正案が2025年12月25日の検討委員会で提示済み。議会提出・可決後、旅館業許可物件の常駐義務等の運営コスト構造が変わる可能性あり。区公式サイトで最新状況を定期確認。</li>
+    <li><strong>渋谷区：</strong>旅館業法施行条例の改正新旧対照表が公表済み。住宅宿泊事業の条例改正についても議会動向を公式サイトで定期確認。</li>
+    <li>改正内容次第では旅館業許可物件のコスト構造（フロント常駐義務化等）が大きく変わる可能性。</li>
+  </ul>
+
+  <h3>③ 旅館業（簡易宿所）への移行判断は慎重に</h3>
+  <ul class="dl">
+    <li>墨田区・葛飾区・渋谷区が旅館業への規制も同時強化。「民泊規制逃れのための旅館業移行」への各区の牽制が強まっている。</li>
+    <li>旅館業への移行を検討する際は、各区の旅館業法施行条例（最新版）を必ず確認すること。</li>
+  </ul>
+
+  <h3>④ 上乗せ条例なし区（北区・江戸川区）の戦略的活用</h3>
+  <ul class="dl">
+    <li>2026年4月以降、実質的に無制限（年180日）で運営できるのは北区・江戸川区の2区のみ。</li>
+    <li>両区も今後条例制定の可能性があるため、議会動向・区の検討状況を継続モニタリングすること。</li>
+  </ul>
+
+  <h3>⑤ 取締り強化への対応（全区共通）</h3>
+  <ul class="dl">
+    <li>新宿区の廃止命令事例（繰り返し違反で3年間事業禁止）のように、違反事業者への行政処分が厳格化している。管理物件の条例遵守状況の定期チェックを徹底すること。</li>
+    <li>各区で違反事業者の公表制度が整備されつつあり、事業者の評判リスクも高まっている。</li>
+  </ul>
+
+  <div class="caution">
+    <strong>⚠️ ご注意：</strong>本レポートは2026年3月7日時点の公開情報に基づいています。条例・規則は改正される場合があります。重要な経営判断の際は各区の公式ウェブサイトまたは担当窓口（保健所・生活衛生課等）に直接ご確認ください。<br>
+    特に以下は最新動向の確認を推奨します：<ul style="margin:6px 0 0 16px;">
+      <li><strong>千代田区</strong>（2026年第1回区議会定例会 審議中）：改正条例の可決・施行日・具体的条文を随時確認</li>
+      <li><strong>江東区</strong>（旅館業法施行条例 改正案 区議会提出準備中）：区議会提出・可決のタイミングを公式サイトで確認</li>
+      <li><strong>葛飾区</strong>：住宅宿泊事業の具体的な日時制限は条例本文PDF（区公式サイト）での直接確認を推奨</li>
+      <li><strong>大田区 特区民泊</strong>（2026年4月から規制強化）：最新の区ガイドラインを直接確認</li>
+    </ul>
+  </div>
+
+
+  <!-- ============================
+       公式情報源一覧（全23区）
+  ============================= -->
+  <h2>公式情報源一覧（全23区）</h2>
+
+  <table>
+    <thead>
+      <tr><th style="width:90px;">区名</th><th>民泊・住宅宿泊事業 公式ページ</th><th>旅館業 公式ページ</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>千代田区</td><td><a href="https://www.city.chiyoda.lg.jp/koho/kurashi/jutakushukuhakujigyo/jorei.html" target="_blank">条例・ガイドライン</a></td><td><a href="https://www.city.chiyoda.lg.jp/koho/kurashi/kankyoese/egyo/ryokan.html" target="_blank">旅館業手続き</a></td></tr>
+      <tr><td>中央区</td><td><a href="https://www.city.chuo.lg.jp/a0030/kenkouiryou/eisei/seikatsueisei/minpaku/jyutakujyukuhakujigyojyorei.html" target="_blank">中央区ルール</a></td><td>—</td></tr>
+      <tr><td>港区</td><td><a href="https://www.city.minato.tokyo.jp/kankyoueiseishidou/minpaku2.html" target="_blank">民泊を行う方へ</a></td><td>—</td></tr>
+      <tr><td>新宿区</td><td><a href="https://www.city.shinjuku.lg.jp/kenkou/eisei03_002086.html" target="_blank">新宿区のルール</a></td><td>—</td></tr>
+      <tr><td>文京区</td><td><a href="https://www.city.bunkyo.lg.jp/b026/p003112/index.html" target="_blank">民泊ページ</a></td><td><a href="https://www.city.bunkyo.lg.jp/documents/2801/202161131752.pdf" target="_blank">旅館業法施行条例（PDF）</a></td></tr>
+      <tr><td>台東区</td><td><a href="https://www.city.taito.lg.jp/kenchiku/jutaku/eisei/jutakulaw/minpanku20180613_003.html" target="_blank">台東区ルール</a></td><td>—</td></tr>
+      <tr><td>墨田区</td><td><a href="https://www.city.sumida.lg.jp/kenko_fukushi/eisei/juutaku_syukuhaku/kunotorikumi/minpakutorikumi.html" target="_blank">条例施行取組</a></td><td><a href="https://www.city.sumida.lg.jp/kenko_fukushi/eisei/kankyo_eisei/ryokan.html" target="_blank">旅館業手続き</a></td></tr>
+      <tr><td>江東区</td><td><a href="https://www.city.koto.lg.jp/260403/fukushi/ese/kankyo/minpaku_index.html" target="_blank">民泊手続き</a></td><td><a href="https://www.city.koto.lg.jp/260403/fukushi/ese/kankyo/ryokan_index.html" target="_blank">旅館業手続き</a>　<a href="https://www.city.koto.lg.jp/260403/fukushi/ese/kankyo/ryokan_kisei.html" target="_blank">規制検討委員会</a></td></tr>
+      <tr><td>品川区</td><td><a href="https://www.city.shinagawa.tokyo.jp/PC/kenkou/kenkou-eisei/kenkou-eisei-kankyo/hpg000033251.html" target="_blank">民泊手続き</a></td><td><a href="http://www.city.shinagawa.tokyo.jp/PC/kenkou/kenkou-eisei/kenkou-eisei-kankyo/hpg000017848.html" target="_blank">旅館業手続き</a></td></tr>
+      <tr><td>目黒区</td><td><a href="https://www.city.meguro.tokyo.jp/seikatsueisei/kenkoufukushi/eisei/minpaku.html" target="_blank">民泊条例</a></td><td><a href="https://www.city.meguro.tokyo.jp/seikatsueisei/kenkoufukushi/eisei/ryokantetsuduki.html" target="_blank">旅館業手続き</a></td></tr>
+      <tr><td>大田区</td><td><a href="https://www.city.ota.tokyo.jp/seikatsu/hoken/eisei/riyoubiyou/minpaku_shinpou.html" target="_blank">住宅宿泊事業</a></td><td><a href="https://www.city.ota.tokyo.jp/seikatsu/hoken/eisei/riyoubiyou/tetuduki/ryokanngyou.html" target="_blank">旅館業</a></td></tr>
+      <tr><td>世田谷区</td><td><a href="https://www.city.setagaya.lg.jp/02245/3247.html" target="_blank">民泊について</a></td><td><a href="https://www.city.setagaya.lg.jp/02245/3225.html" target="_blank">旅館業手続き</a></td></tr>
+      <tr><td>渋谷区</td><td><a href="https://www.city.shibuya.tokyo.jp/kenko/eisei/kankyo/minpaku.html" target="_blank">民泊について</a></td><td><a href="https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-eisei/kankyo-eisei/ryokangyo.html" target="_blank">旅館業について</a></td></tr>
+      <tr><td>中野区</td><td><a href="https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/pet-eisei/kankyoueisei/jyutakusyukuhaku.html" target="_blank">中野区ルール</a></td><td><a href="https://www.city.tokyo-nakano.lg.jp/dept/475000/d022062.html" target="_blank">旅館業</a></td></tr>
+      <tr><td>杉並区</td><td><a href="https://www.city.suginami.tokyo.jp/s046/871.html" target="_blank">民泊ページ</a></td><td>—</td></tr>
+      <tr><td>豊島区</td><td><a href="https://www.city.toshima.lg.jp/214/kurashi/ese/kankyoese/minpaku/kaisei.html" target="_blank">条例改正</a></td><td>—</td></tr>
+      <tr><td>北区</td><td><a href="https://www.city.kita.tokyo.jp/seikatsueisei/kenko/ese/kankyo.html" target="_blank">民泊制度</a></td><td>—</td></tr>
+      <tr><td>荒川区</td><td><a href="https://www.city.arakawa.tokyo.jp/reiki_int/reiki_honbun/p800RG00001216.html" target="_blank">条例本文</a></td><td>—</td></tr>
+      <tr><td>板橋区</td><td><a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/kankyo/ryokan/1003882.html" target="_blank">住宅宿泊事業法</a></td><td><a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/kankyo/ryokan/1003880.html" target="_blank">旅館業開設手続き</a></td></tr>
+      <tr><td>練馬区</td><td><a href="https://www.city.nerima.tokyo.jp/hokenfukushi/eisei/minpaku/minnpaku.html" target="_blank">民泊ページ</a></td><td><a href="https://www.city.nerima.tokyo.jp/hokenfukushi/eisei/kankyoeisei/hotel.html" target="_blank">旅館業許可</a></td></tr>
+      <tr><td>足立区</td><td><a href="https://www.city.adachi.tokyo.jp/sekatsuese/minpakujourei.html" target="_blank">民泊条例</a></td><td>—</td></tr>
+      <tr><td>葛飾区</td><td><a href="https://www.city.katsushika.lg.jp/online/1007359/1030292/1007374/1007411/1040682.html" target="_blank">事業者向けお知らせ</a></td><td><a href="https://www.city.katsushika.lg.jp/online/1007359/1030292/1007374/1007411/1025803.html" target="_blank">旅館業について</a></td></tr>
+      <tr><td>江戸川区</td><td><a href="https://www.city.edogawa.tokyo.jp/kenko/eisei/kankyo/syukuhakujigyoho/index.html" target="_blank">民泊制度</a></td><td><a href="https://www.city.edogawa.tokyo.jp/e055/kenko/eisei/kankyo/kankyoeisei_kyoka/ryokan/tetsuzuki.html" target="_blank">旅館業手続き</a></td></tr>
+      <tr><td>国土交通省</td><td colspan="2"><a href="https://www.mlit.go.jp/kankocho/minpaku/municipality.html" target="_blank">民泊制度ポータル「各自治体の情報・窓口案内」</a>　／　<a href="https://www.mlit.go.jp/kankocho/minpaku/content/001418351.pdf" target="_blank">条例とりまとめPDF</a></td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    本レポートは各区公式ウェブサイト・国土交通省民泊制度ポータル等の公開情報に基づき作成されています。法的判断・重要な経営判断の際は必ず各区の公式サイトまたは担当窓口（保健所・生活衛生課等）にてご確認ください。<br>
+    作成：2026年3月7日
+  </footer>
+
+</div>
+</body>
+</html>
