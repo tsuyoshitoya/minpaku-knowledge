@@ -7,6 +7,7 @@ on:
     paths:
       - '*.md'       # Markdown の更新時のみ発火
       - '*.html'     # HTML ファイルの更新時も発火
+  workflow_dispatch:  # GitHub UI から手動実行できるようにする
 
 jobs:
   dispatch:
