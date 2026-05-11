@@ -1,0 +1,31 @@
+name: Notify minpaku-course-chat
+
+on:
+  push:
+    branches:
+      - main  # または master（デフォルトブランチ名に合わせて変更）
+    paths:
+      - '*.md'       # Markdown の更新時のみ発火
+      - '*.html'     # HTML ファイルの更新時も発火
+
+jobs:
+  dispatch:
+    name: Send repository_dispatch to minpaku-course-chat
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger knowledge sync
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.COURSE_CHAT_DISPATCH_TOKEN }}
+          script: |
+            await github.rest.repos.createDispatchEvent({
+              owner: 'tsuyoshitoya',
+              repo: 'dev',
+              event_type: 'knowledge-updated',
+              client_payload: {
+                source_repo: 'minpaku-knowledge',
+                triggered_by: context.sha,
+              },
+            });
+            console.log('Dispatched knowledge-updated event to tsuyoshitoya/dev');
