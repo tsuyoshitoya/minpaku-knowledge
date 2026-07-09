@@ -24,6 +24,19 @@
   .v.ok { background:#f3f9ee; border-color:#a5d6a7; } .v.ok .vmark { color:#2e7d32; }
   .v.mid { background:#fff8ec; border-color:#ffcc80; } .v.mid .vmark { color:#e65100; }
   .v.ng { background:#fdf0ee; border-color:#ef9a9a; } .v.ng .vmark { color:#c62828; }
+  .mx-title { font-size: 18px; border-left: 5px solid #1a5fa8; padding-left: 10px; margin: 20px 0 8px; }
+  .pdf-link { font-size: 13px; font-weight: normal; color:#1a5fa8; }
+  .mx-wrap { overflow-x: auto; }
+  .mx { border-collapse: collapse; width: 100%; }
+  .mx th, .mx td { border: 1px solid #ccc; padding: 5px 8px; font-size: 12.5px; line-height: 1.4; text-align: left; }
+  .mx tr:first-child th { background: #eef3fa; }
+  .mx .mxw { width: 72px; }
+  .mx .mxaxis { display: block; font-weight: normal; font-size: 10px; color: #666; }
+  .mx th a { color: #1a5fa8; text-decoration: none; }
+  .mx .msym { font-weight: 700; font-size: 15px; }
+  .mx td.ok { background: #f3f9ee; } .mx td.ok .msym { color: #2e7d32; }
+  .mx td.mid { background: #fff8ec; } .mx td.mid .msym { color: #e65100; }
+  .mx td.ng { background: #fdf0ee; } .mx td.ng .msym { color: #c62828; }
   .foot { margin-top:32px; font-size:12px; color:#666; border-top:1px solid #ddd; padding-top:12px; }
   b, strong { color:#111; }
 </style>
@@ -44,6 +57,38 @@
     <strong>【住宅宿泊事業（民泊新法）】</strong>年180日フル営業できる条件の有無を軸に判定：<strong>◎＝制限のないエリアあり（商業地域等で180日フル可。条件付きで住専等でも可の場合は本文に明記）／△＝全域規制だが常駐等の条件を満たせば制限解除可／✕＝全域規制で解除条件なし（週末など期間限定の営業のみ）</strong>。<br>
     本ページは<a href="tokyo23ku_minpaku_report_2026.html">詳細レポート</a>の一言サマリーを公式に集約したものです。いずれも<strong>簡易判定</strong>であり、許可種別（旅館・ホテル／簡易宿所）、既存許可・届出への経過措置、施行日、進行中の改正によって結論が変わります。開業・届出の判断前に、必ず各区の「詳細」リンク先の表と条例原文をご確認ください。判定は2026年7月9日時点です。
   </div>
+
+  <h2 class="mx-title">一覧表（ぱっと見マトリクス）　<a class="pdf-link" href="tokyo23ku_ichigen_matrix.pdf">印刷用PDF（A4横・1枚）</a></h2>
+  <div class="mx-wrap">
+    <table class="mx">
+      <tr><th class="mxw">区</th><th>旅館業<span class="mxaxis">（無人運営の可否）</span></th><th>民泊新法<span class="mxaxis">（180日フル営業の条件）</span></th></tr>
+      <tr><th><a href="#chiyoda">千代田区</a></th><td class="m ng"><span class="msym">✕</span> <span class="mlb">施設内常駐が必須</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限区域の外なら180日フル可</span></td></tr>
+      <tr><th><a href="#chuo">中央区</a></th><td class="m ng"><span class="msym">✕</span> <span class="mlb">施設内常駐が必須</span></td><td class="m ng"><span class="msym">✕</span> <span class="mlb">全域で週末のみ（解除条件なし）</span></td></tr>
+      <tr><th><a href="#minato">港区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限は住専等の家主不在型のみ</span></td></tr>
+      <tr><th><a href="#shinjuku">新宿区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可（運用確認を推奨）</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限は住専のみ</span></td></tr>
+      <tr><th><a href="#bunkyo">文京区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可（ただし改正接近）</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限区域の外なら180日フル可</span></td></tr>
+      <tr><th><a href="#taito">台東区</a></th><td class="m ng"><span class="msym">✕</span> <span class="mlb">施設内常駐が必須</span></td><td class="m mid"><span class="msym">△</span> <span class="mlb">全域規制・現行は常駐で解除可（期限あり）</span></td></tr>
+      <tr><th><a href="#sumida">墨田区</a></th><td class="m mid"><span class="msym">△</span> <span class="mlb">近接常駐が必要（令和8年4月施行）</span></td><td class="m mid"><span class="msym">△</span> <span class="mlb">全域規制・常駐で解除可（令和8年4月施行）</span></td></tr>
+      <tr><th><a href="#koto">江東区</a></th><td class="m ng"><span class="msym">✕</span> <span class="mlb">施設内常駐が必須（令和8年7月施行）</span></td><td class="m ng"><span class="msym">✕</span> <span class="mlb">全域で週末のみ（解除条件なし）</span></td></tr>
+      <tr><th><a href="#shinagawa">品川区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">近商・商業は制限外</span></td></tr>
+      <tr><th><a href="#meguro">目黒区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可（ただし改正接近）</span></td><td class="m ng"><span class="msym">✕</span> <span class="mlb">全域で週末のみ（解除条件なし）</span></td></tr>
+      <tr><th><a href="#ota">大田区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">商業系は制限なし・住専等は不在型通年不可</span></td></tr>
+      <tr><th><a href="#setagaya">世田谷区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可（改正協議中）</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限は住専のみ（祝日は営業可）</span></td></tr>
+      <tr><th><a href="#shibuya">渋谷区</a></th><td class="m mid"><span class="msym">△</span> <span class="mlb">近接常駐が必要（令和8年7月施行）</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">商業系は制限なし・住居系は年63日</span></td></tr>
+      <tr><th><a href="#nakano">中野区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可（ただし改正接近）</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限は住専のみ・同居型は許可で解除可</span></td></tr>
+      <tr><th><a href="#suginami">杉並区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限は住専の家主不在型のみ</span></td></tr>
+      <tr><th><a href="#toshima">豊島区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可（ただし改正の動き）</span></td><td class="m ng"><span class="msym">✕</span> <span class="mlb">全域規制（新規は約7割の区域で通年不可）</span></td></tr>
+      <tr><th><a href="#kita">北区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可（限定型）</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">上乗せ条例なし（23区で唯一）</span></td></tr>
+      <tr><th><a href="#arakawa">荒川区</a></th><td class="m ng"><span class="msym">✕</span> <span class="mlb">施設内常駐が必須</span></td><td class="m ng"><span class="msym">✕</span> <span class="mlb">全域で週末のみ＋1km以内常駐義務</span></td></tr>
+      <tr><th><a href="#itabashi">板橋区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限は住専のみ・近接営業所等で解除可</span></td></tr>
+      <tr><th><a href="#nerima">練馬区</a></th><td class="m mid"><span class="msym">△</span> <span class="mlb">近接常駐が必要</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限は住専＋田園住居のみ</span></td></tr>
+      <tr><th><a href="#adachi">足立区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">制限は住専のみ（年末年始は全期間禁止）</span></td></tr>
+      <tr><th><a href="#katsushika">葛飾区</a></th><td class="m mid"><span class="msym">△</span> <span class="mlb">近接常駐が必要（令和8年4月施行）</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">商業地域は制限外・その他は常駐で解除可</span></td></tr>
+      <tr><th><a href="#edogawa">江戸川区</a></th><td class="m ok"><span class="msym">◎</span> <span class="mlb">無人運営可</span></td><td class="m ok"><span class="msym">◎</span> <span class="mlb">商業系等は制限外・住居系は原則通年不可</span></td></tr>
+    </table>
+  </div>
+  <p style="font-size:12px;color:#666;margin:6px 0 24px;">区名をタップすると本ページ内の各区サマリーへ、そこから詳細レポートへ飛べます。</p>
+
 
   <section class="ward" id="chiyoda">
     <h2>千代田区 <a class="detail-link" href="tokyo23ku_minpaku_report_2026.html#ward-chiyoda">詳細（条文・出典）→</a></h2>

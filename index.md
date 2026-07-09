@@ -29,6 +29,7 @@ title: 民泊運営完全ナレッジベース
 
 - [東京都23区 住宅宿泊事業・旅館業 条例動向レポート（2026年3月）](tokyo23ku_minpaku_report_2026.html)
 - [東京23区 一言サマリー（旅館業・民泊新法の運営可否 早見ページ）](tokyo23ku_ichigen_summary.html)
+- [東京23区 一覧表 印刷用PDF（A4横・1枚）](tokyo23ku_ichigen_matrix.pdf)
 
 ---
 
